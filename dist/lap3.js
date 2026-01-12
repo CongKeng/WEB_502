@@ -8,14 +8,14 @@ const average = (scores) => {
     }
     return scores.length ? sum / scores.length : 0;
 };
-console.log("Average:", average([8, 9, 7, 10])); 
+console.log("Average:", average([8, 9, 7, 10]));
 const checkEvenOdd = (n) => {
     if (n % 2 === 0)
         return "Even";
     return "Odd";
 };
-console.log("Check 5:", checkEvenOdd(5)); 
-console.log("Check 8:", checkEvenOdd(8)); 
+console.log("Check 5:", checkEvenOdd(5));
+console.log("Check 8:", checkEvenOdd(8));
 function createUser(name = "Guest", age) {
     return {
         name: name,
