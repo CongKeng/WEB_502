@@ -1,23 +1,19 @@
-//1
-class Std {
+type Std = {
   id: number;
   name: string;
   score: number;
+};
+const st1: Std = {
+  id: 1,
+  name: "Nguyễn Duy Công",
+  score: 8
+};
 
-  constructor(id: number, name: string, score: number) {
-    this.id = id;
-    this.name = name;
-    this.score = score;
-  }
-
-  showInfo(): string {
-    return `ID: ${this.id} - Name: ${this.name} - Score: ${this.score}`;
-  }
+function showInfo(st: Std): string {
+  return `ID: ${st.id} - Name: ${st.name} - Score: ${st.score}`;
 }
 
-const st1 = new Std(1, "Nguyễn Duy Công", 8);
-console.log(st1.showInfo());
-
+console.log(showInfo(st1));
 //2
 interface User {
   id: number;

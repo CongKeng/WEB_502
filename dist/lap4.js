@@ -1,21 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-//1
-class Std {
-    id;
-    name;
-    score;
-    constructor(id, name, score) {
-        this.id = id;
-        this.name = name;
-        this.score = score;
-    }
-    showInfo() {
-        return `ID: ${this.id} - Name: ${this.name} - Score: ${this.score}`;
-    }
+const st1 = {
+    id: 1,
+    name: "Nguyễn Duy Công",
+    score: 8
+};
+function showInfo(st) {
+    return `ID: ${st.id} - Name: ${st.name} - Score: ${st.score}`;
 }
-const st1 = new Std(1, "Nguyễn Duy Công", 8);
-console.log(st1.showInfo());
+console.log(showInfo(st1));
 const user1 = {
     id: 1,
     email: "nguyencong16072006@gmail.com"
